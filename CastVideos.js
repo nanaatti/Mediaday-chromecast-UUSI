@@ -1,60 +1,143 @@
-// Copyright 2016 Google Inc. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+// Copyright 2017 Tiimi 6 Inc. All Rights Reserved.
 
 /**
  * Hardcoded media json objects*
- * Tähän lisätään videoiden linkit, otsikot, kuvaukset ym.*
  */
-var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
-    'videos' : [
-        { 'description' : "Esittäjä(t): Visa Parviainen. Kieli: Suomi",
-            'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af67suae17q81pt51giils21e267.mp4'],
-            'subtitle' : 'Media Soft Day 2016',
-            'thumb' : 'thumbs/1493_s.jpg',
-            'title' : 'Automatic security testing'
-        },
-        { 'description' : 'Esittäjä(t): Tero Ahonen. Kieli: Suomi',
-            'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af681h79mhh131p1pmcti01imb7.mp4'],
-            'subtitle' : 'Media Soft Day 2016',
-            'thumb' : 'thumbs/1494_s.jpg',
-            'title' : 'Pilveä kehittäjille ja liiketoiminnalle'
-        },
-        { 'description' : 'Esittäjä(t): Jouni Leino. Kieli: Suomi',
-            'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af686lvp1a1h1lnn1d191v3n1odi7.mp4'],
-            'subtitle' : 'Media Soft Day 2016',
-            'thumb' : 'thumbs/1495_s.jpg',
-            'title' : 'Automate everything'
-        },
-        { 'description' : 'Esittäjä(t): Frans Tihveräinen. Kieli: Suomi',
-            'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af68ap05mlv1pr51831gvr19pi7.mp4'],
-            'subtitle' : 'Media Soft Day 2016',
-            'thumb' : 'thumbs/1496_s.jpg',
-            'title' : 'Mediatekniikasta yritystoimintaa'
-        },
-        { 'description' : 'Esittäjä(t): Ali Rantakari. Kieli: Suomi',
-            'sources' : ['https://flash.metropolia.fi/streams/636/video/o_1af8crekq3gs10t83vf12om1o057.mp4'],
-            'subtitle' : 'Media Soft Day 2016',
-            'thumb' : 'thumbs/1498_s.jpg',
-            'title' : 'API Design in the wild'
-        }
-    ]}]};
+
+/*  * Tähän lisätään videoiden tiedot ja linkit seuraavalla tavalla
+    'description': "videon kuvaus tähän",
+    'sources': ['videon linkki tähän'],
+    'subtitle': 'tapahtuman nimi tähän',
+    'thumb': 'pikkukuvan linkki tähän',
+    'title': 'videon otsikko tähän',
+    'year': 'vuosiluku tähän'
+ */
+
+ var media2017 = {
+    'categories': [{
+        'name': 'Movies',
+        'videos': [
+            {
+                'description': "Esittäjä(t): Visa Parviainen. Kieli: Suomi",
+                'sources': ['https://flash.metropolia.fi/streams/642/video/o_1bchhg36jnu61dr9q2j6i11277.mp4'],
+                'subtitle': 'Media Soft Day 2017',
+                'thumb': 'thumbs/1590_s.jpg',
+                'title': 'Koneäly',
+                'year': '2017'
+            },
+            {
+                'description': "Esittäjä(t): Anne Oikarinen. Kieli: Suomi",
+                'sources': ['https://flash.metropolia.fi/streams/642/video/o_1bchiauq619r91co71rh11c6love7.mp4'],
+                'subtitle': 'Media Soft Day 2017',
+                'thumb': 'thumbs/1591_s.jpg',
+                'title': 'Kolme keinoa ohjelmistoturvallisuuteen',
+                'year': '2017'
+            },
+            {
+                'description': "Esittäjä(t): Saman Ahmadi, Jouko Nyholm. Kieli: Suomi",
+                'sources': ['https://flash.metropolia.fi/streams/642/video/o_1bchjmjct1prrfes1ne2i96191q7.mp4'],
+                'subtitle': 'Media Soft Day 2017',
+                'thumb': 'thumbs/1592_s.jpg',
+                'title': 'Enterprise IT -toteutuksia Suomen johtavissa yrityksissä hyödyntäen Microsoft-pilviteknologioita',
+                'year': '2017'
+            },
+            {
+                'description': "Esittäjä(t): Niilo Ursin. Kieli: Suomi",
+                'sources': ['https://flash.metropolia.fi/streams/642/video/o_1bchkh6671ah51l6g1mp0fgj1v467.mp4'],
+                'subtitle': 'Media Soft Day 2017',
+                'thumb': 'thumbs/1593_s.jpg',
+                'title': 'Docker-konttiteknologia mullistaa sovelluskehityksen',
+                'year': '2017'
+            }
+        ]
+    }]
+};
+
+var media2016 = {
+    'categories': [{
+        'name': 'Movies',
+        'videos': [
+            {
+                'description': "Esittäjä(t): Visa Parviainen. Kieli: Suomi",
+                'sources': ['https://flash.metropolia.fi/streams/636/video/o_1af67suae17q81pt51giils21e267.mp4'],
+                'subtitle': 'Media Soft Day 2016',
+                'thumb': 'thumbs/1493_s.jpg',
+                'title': 'Automatic security testing',
+                'year': '2016'
+            },
+            {
+                'description': 'Esittäjä(t): Tero Ahonen. Kieli: Suomi',
+                'sources': ['https://flash.metropolia.fi/streams/636/video/o_1af681h79mhh131p1pmcti01imb7.mp4'],
+                'subtitle': 'Media Soft Day 2016',
+                'thumb': 'thumbs/1494_s.jpg',
+                'title': 'Pilveä kehittäjille ja liiketoiminnalle',
+                'year': '2016'
+            },
+            {
+                'description': 'Esittäjä(t): Jouni Leino. Kieli: Suomi',
+                'sources': ['https://flash.metropolia.fi/streams/636/video/o_1af686lvp1a1h1lnn1d191v3n1odi7.mp4'],
+                'subtitle': 'Media Soft Day 2016',
+                'thumb': 'thumbs/1495_s.jpg',
+                'title': 'Automate everything',
+                'year': '2016'
+            },
+            {
+                'description': 'Esittäjä(t): Frans Tihveräinen. Kieli: Suomi',
+                'sources': ['https://flash.metropolia.fi/streams/636/video/o_1af68ap05mlv1pr51831gvr19pi7.mp4'],
+                'subtitle': 'Media Soft Day 2016',
+                'thumb': 'thumbs/1496_s.jpg',
+                'title': 'Mediatekniikasta yritystoimintaa',
+                'year': '2016'
+            },
+            {
+                'description': 'Esittäjä(t): Ali Rantakari. Kieli: Suomi',
+                'sources': ['https://flash.metropolia.fi/streams/636/video/o_1af8crekq3gs10t83vf12om1o057.mp4'],
+                'subtitle': 'Media Soft Day 2016',
+                'thumb': 'thumbs/1498_s.jpg',
+                'title': 'API Design in the wild',
+                'year': '2016'
+            },
+        ]
+    }]
+};
+var media2015 = {
+    'categories': [{
+        'name': 'Movies',
+        'videos': [
+
+            {
+                'description': 'Esittäjä(t): -. Kieli: English',
+                'sources': ['https://flash.metropolia.fi/streams/626/video/o_19kqhnek4l8a1ifvqa9efrr8r7.mp4'],
+                'subtitle': 'Innovation Project Presentations 2015',
+                'thumb': 'thumbs/1441_s.jpg',
+                'title': 'Endangered Sounds',
+                'year': '2015'
+            },
+        ]
+    }]
+};
+
+var mediaExtras = {
+    'categories': [{
+        'name': 'Movies',
+        'videos': [
+            {
+                'description': "Description here",
+                'sources': ['videolink here'],
+                'subtitle': 'Event Name here',
+                'thumb': 'http://english.tw/wp-content/themes/qaengine/img/default-thumbnail.jpg',
+                'title': 'Extras',
+                'year': 'Year here'
+            },
+        ]
+    }]
+};
+var mediaJSON = media2016;
 
 console.log(mediaJSON);
 console.log(mediaJSON.categories[0].videos[0]);
 
 'use strict';
-
 
 /**
  * Media source root URL
@@ -144,7 +227,8 @@ CastPlayer.prototype.initializeCastPlayer = function() {
     // Set the receiver application ID to your own (created in the
     // Google Cast Developer Console), or optionally
     // use the chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
-    options.receiverApplicationId = '4F8B3483';
+    //options.receiverApplicationId = '4F8B3483';
+    options.receiverApplicationId = '0D3F77FD';
 
     // Auto join policy can be one of the following three:
     // ORIGIN_SCOPED - Auto connect from same appId and page origin
@@ -226,6 +310,7 @@ var PlayerHandler = function(castPlayer) {
         castPlayer.playerState = PLAYER_STATE.PLAYING;
         document.getElementById('play').style.display = 'none';
         document.getElementById('pause').style.display = 'block';
+        playMedia();
         this.updateDisplayMessage();
     };
 
@@ -238,6 +323,7 @@ var PlayerHandler = function(castPlayer) {
         castPlayer.playerState = PLAYER_STATE.PAUSED;
         document.getElementById('play').style.display = 'block';
         document.getElementById('pause').style.display = 'none';
+        playMedia();
         this.updateDisplayMessage();
     };
 
@@ -359,6 +445,7 @@ CastPlayer.prototype.setupLocalPlayer = function () {
     };
 
     playerTarget.setVolume = function(volumeSliderPosition) {
+        setReceiverVolume(volumeSliderPosition/100, this.ismuted);
         localPlayer.volume = volumeSliderPosition < FULL_VOLUME_HEIGHT ?
             volumeSliderPosition / FULL_VOLUME_HEIGHT : 1;
         var p = document.getElementById('audio_bg_level');
@@ -604,6 +691,11 @@ CastPlayer.prototype.seekMedia = function(event) {
     var pos = parseInt(event.offsetX, 10);
     var pi = document.getElementById('progress_indicator');
     var p = document.getElementById('progress');
+    if (currentMediaSession != null) {
+        console.log('blarga');
+        var hPos = (pos / 600) * 100;
+        seekHelloMedia(hPos);
+    }
     if (event.currentTarget.id == 'progress_indicator') {
         var curr = parseInt(
             this.currentMediaTime + this.currentMediaDuration * pos /
@@ -972,8 +1064,6 @@ CastPlayer.getErrorMessage = function(error) {
     }
 };
 
-/* helloVideos START */
-
 /**
  * Cast initialization timer delay
  **/
@@ -1009,9 +1099,12 @@ var timer = null;
 /**
  * Call initialization
  */
-if (!chrome.cast || !chrome.cast.isAvailable) {
-    setTimeout(initializeCastApi, CAST_API_INITIALIZATION_DELAY);
-}
+function helloCastIni() {
+    if (!chrome.cast || !chrome.cast.isAvailable) {
+        setTimeout(initializeCastApi, CAST_API_INITIALIZATION_DELAY);
+    }
+};
+helloCastIni();
 
 /**
  * initialization
@@ -1260,9 +1353,9 @@ function loadMedia(mediaURL) {
 
     if (mediaURL) {
         var mediaInfo = new chrome.cast.media.MediaInfo(mediaURL);
-        currentMediaTitle = 'custom title needed';
-        currentMediaThumb = 'images/video_icon.png';
-        document.getElementById('thumb').src = MEDIA_SOURCE_ROOT +
+        currentMediaTitle = 'Loading custom media...';
+        currentMediaThumb = 'images/watermark.png';
+        //document.getElementById('thumb').src = MEDIA_SOURCE_ROOT +
             currentMediaThumb;
     }
     else {
@@ -1526,7 +1619,7 @@ function muteMedia() {
  * @param {Number} pos A number to indicate percent
  * @this seekMedia
  */
-function seekMedia(pos) {
+function seekHelloMedia(pos) {
     console.log('Seeking ' + currentMediaSession.sessionId + ':' +
         currentMediaSession.mediaSessionId + ' to ' + pos + '%');
     progressFlag = 0;
@@ -1564,9 +1657,73 @@ function appendMessage(message) {
 
 }
 
+/* Custom */
 
-/* helloVideo END */
+function togglePanel() {
+    var element = document.getElementById('toggle');
+    if (element.style.display === 'block') {
+        element.style.display = 'none';
+        var info = document.getElementById('hellobuttons');
+        info.style.height = '8px';
 
+    } else {
+        element.style.display = 'block';
+        var info = document.getElementById('hellobuttons');
+        info.style.height = '320px';
+    }
+}
 
+function showYear(Y) {
+    /*var elemt = document.getElementsByClassName("thumb");
+     clearCycles = elemt.length;*/
+    if (Y === 2017) {
+        clearCarousel();
+        mediaJSON = media2017;
+        var Roba = new CastPlayer();
+    } else if (Y === 2016) {
+        clearCarousel();
+        mediaJSON = media2016;
+        var Roba = new CastPlayer();
+    } else if (Y === 2015) {
+        clearCarousel();
+        mediaJSON = media2015;
+        var Roba = new CastPlayer();
+    } else {
+        clearCarousel()
+        mediaJSON = mediaExtras;
+        var Roba = new CastPlayer();
+        //CastPlayer.prototype.addVideoThumbs();
+    }
+}
+/*
+ Funktio joka hakee "thumb" classin omaavat elementien määrän ja pyöräyttää niitä poistavan koodin niiden määrän verran. Kyseisen classin omaavia elemnttejä pitäisi olla vain "carousel" divin sisällä CastPlayer:n tekemänä.
+ */
+function clearCarousel() {
+    var elemt = document.getElementsByClassName("thumb");
+    var clearCycles = elemt.length;
+    for (var i = 0; i < clearCycles; i++) {
+        var elems = document.querySelector('[id^="thumb"]').id;
+        //console.log(elems);
+        var elem = document.getElementById(elems);
+        //console.log(elem)
+        elem.parentNode.removeChild(elem);
+        //console.log(i);
+    };
+}
 
+/*Modified functions*/
 
+//Hellovideo mutemedia edit
+function muteEditMedia() {
+    if (!session || !currentMediaSession) {
+        return;
+    }
+
+    if (localPlayer.muted = false) {
+        setReceiverVolume(currentVolume, true);
+        appendMessage('media muted');
+    } else {
+        setReceiverVolume(currentVolume, false);
+        appendMessage('media unmuted');
+    }
+}
